@@ -1,0 +1,102 @@
+.\"Modified from man(1) of FreeBSD, the NetBSD mdoc.template, and mdoc.samples.
+.\"See Also:
+.\"man mdoc.samples for a complete listing of options
+.\"man mdoc for the short list of editing options
+.\"/usr/share/misc/mdoc.template
+.Dd 8/4/10               \" DATE
+.Dt simple_shell 1      \" Program name and manual section number
+.Os simple_shell manpage
+.Sh NAME                 \" Section Header - required - don't modify
+.Nm simple_shell
+.\" The following lines are read in generating the apropos(man -k) database. Use only key
+.Nd command interpreter (shell)
+.Sh SYNOPSIS             \" Section Header - required - don't modify
+.Nm
+.Op Fl a Ar path         \" [-a path]
+.Op Ar file              \" [arg]
+.Op Ar                   \" [arg ...]
+arg2 ...                 \" Arguments
+.Sh DESCRIPTION      \" Section Header - required - don't modify
+.Nm
+simple_shell is a simple implementation of the standard command interpreter for the system that receives comands from the standard input or a file. This version has many features that make it similar in some aspects to the standard shell, but it is
+a simple program to learn its operation. Only some standard shell features have been incorporated. This manual page is not intended to be a tutorial or a full specification of 
+.Nm 
+. .
+.Sh ARGUMENTS
+The first argument is assumed to be the name of a file containing 
+.Nm
+commands. The 
+.Nm
+reads and executes commands from this file, then exits. 
+.Nm
+'s exit status is the exit status of the last command executed in the script. If no commands are executed, the exit status is 0. An attempt is first made to open the file in the current directory, and, if no file is found, then the 
+.Nm 
+searches the directories in PATH for the script.
+
+.Sh BUILTING COMMANDS
+.Pp                      \" Inserts a space
+This is the list of builting commands with their descriptions:
+.Bl -tag -width -indent  \" Begins a tagged list
+.It Fl cd                 \"-a flag as a list item
+The cd command change the simple_shell working directory
+.El                      \" Ends the list
+
+.Sh COMPILATION
+
+if the simple_shell still does not have an execution file, it is necessary to perform the compilation process from the .c files that host the source code, this process is recommended to do it with the GNU Compiler Collection and you must enter the following line:
+.P
+.RS
+.B $ gcc -Wall -Werror -Wextra -pedantic *.c -o simple_shell
+.P
+.RE
+after the compilation process, your simple_shell should work like this in interactive mode, typing the following line followed by an ENTER::
+.P
+.RS
+.B $ ./simple_shell
+.P
+.RE
+But also in non-interactive mode:
+.P
+.RS
+.B $ echo "/bin/ls" | ./simple_shell
+
+.SH COMMANDS
+The following commands are valid:
+
+.IT
+.B pwd
+- prints the name of the current working directory
+
+.B ls
+- list the contents of the directory
+
+.B echo
+- shows a line of text
+
+.B env
+- display the environment variables and their values
+
+Example of command:
+.IP
+.br
+.\&
+.RS
+\&$ pwd
+.br
+\&/home/my_directory
+
+\&$ echo "Hello World!"
+.br
+\&Hello World!
+
+
+.Sh SEE ALSO
+    man sh
+
+.Sh AUTHORS
+Nildiert Jimenez
+
+Ricardo Gutierrez
+    
+.\" .Sh BUGS              \" Document known, unremedied bugs
+.\" .Sh HISTORY           \" Document history if command behaves in a unique manner
