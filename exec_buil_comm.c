@@ -1,5 +1,4 @@
 #include "samuel.h"
-
 /**
  * verif_built_comm - Execute the builtins commands.
  * @str: First arg.

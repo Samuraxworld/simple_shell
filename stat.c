@@ -1,5 +1,4 @@
 #include "samuel.h"
-
 /**
  * _stat - stat of a file.
  * @myself: my own name as shell.
@@ -7,7 +6,6 @@
  *
  * Return: 1 on sucess, 0 on failure.
  */
-
 int _stat(char *myself, char *cmd)
 {
 	struct stat st;

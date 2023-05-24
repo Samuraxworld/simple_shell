@@ -1,5 +1,4 @@
 #include "samuel.h"
-
 /**
  * *_strstr - Function that return the number that coincide two strings
  * @haystack: The character to print
@@ -8,7 +7,6 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-
 char *_strstr(char *haystack, char *needle)
 {
 	int i = 0,  j, position;

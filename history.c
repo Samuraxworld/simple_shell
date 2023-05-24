@@ -24,7 +24,6 @@ int add_nodeint(history_t **head, char *str)
 	/*  printf("DEBUG: Address new %p\n", (void*)&new);  */
 	/*  printf("DEBUG: Address new next  %p\n", (void*)&new->next);  */
 	/*  printf("DEBUG: Address new prev %p\n", (void*)&new->prev);  */
-
 	if (new->comms == NULL)
 	{
 		free_listint(*head);

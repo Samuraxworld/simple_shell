@@ -1,5 +1,4 @@
 #include "samuel.h"
-
 /**
  * _prompt - write prompt and read a command line.
  * @myself: String for prompt init.
@@ -8,7 +7,6 @@
  *
  * Return: NULL or pointer to command list.
  */
-
 command_t **_prompt(char *myself, char *argv)
 {
 	size_t buff_size = 0;

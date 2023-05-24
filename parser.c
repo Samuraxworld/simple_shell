@@ -1,5 +1,4 @@
 #include "samuel.h"
-
 /**
  * _parser_cmd - Parses a simple command from prompt.
  * @cmd_line: command line to be parsed from prompt.
@@ -7,7 +6,6 @@
  *
  * Return: NULL or pointer to command node
  */
-
 command_t *_parser_cmd(char *myself, char *cmd_line)
 {
 	size_t i = 0;

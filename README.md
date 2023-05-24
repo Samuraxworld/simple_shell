@@ -1,2 +1,1 @@
-simple shell project
-# simple_shell
+simple_shell

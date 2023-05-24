@@ -1,5 +1,4 @@
 #include "samuel.h"
-
 /**
  * *find_path - Find the PATH
  * @environ: Environ variable.

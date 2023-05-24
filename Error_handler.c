@@ -1,11 +1,9 @@
 #include "samuel.h"
-
 /**
  * error_handler - error message handler
  * @myself: my own nam as shell.
  * @msg_code: error message number.
  */
-
 void error_handler(char *myself, int msg_code)
 {
 	int i = 0, printed = 0;

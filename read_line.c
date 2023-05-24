@@ -1,11 +1,9 @@
 #include "samuel.h"
-
 /**
  * read_line - read a line.
  *
  * Return: NULL or pointer to string.
  */
-
 char *read_line(void)
 {
 	char *line = NULL;

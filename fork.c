@@ -1,5 +1,4 @@
 #include "samuel.h"
-
 /**
  * _fork - fork code to execute a new command
  * @cmd_node: Command node pointer.
@@ -9,7 +8,6 @@
  *
  * Return: 1 on sucess, 0 on failure.
  */
-
 int _fork(char *myself, command_t *cmd_node, char *path, char **env)
 {
 	pid_t status, child_pid;

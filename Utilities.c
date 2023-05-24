@@ -7,7 +7,6 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-
 char *_strdup(char *str)
 {
 	int i = 0, size = 0;
@@ -31,7 +30,6 @@ char *_strdup(char *str)
  * @str: The string that receives.
  * Return: The count of characters in string.
  */
-
 size_t _strlen(char *str)
 {
 	size_t i = 0;
@@ -100,7 +98,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-
 int _strcmp(char *s1, char *s2)
 {
 	int i = 0, comparition = 0;

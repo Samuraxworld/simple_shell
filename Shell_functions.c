@@ -1,5 +1,4 @@
 #include "samuel.h"
-
 /**
  * main - Simple Shell
  * @ac: Argument counter.
@@ -8,7 +7,6 @@
  *
  * Return: 0 or -1 in failure.
  */
-
 int main(int ac, char **av, char **env)
 {
 	/* char *shell_pharse; */

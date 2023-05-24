@@ -1,5 +1,4 @@
 #include "samuel.h"
-
 /**
  * new_cmd_node - Creates a new node for command struct
  * @myself: my own name as shell.
@@ -7,7 +6,6 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-
 command_t *new_cmd_node(char *myself)
 {
 	command_t *cmd_node = NULL;
@@ -31,7 +29,6 @@ command_t *new_cmd_node(char *myself)
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-
 void add_tok_to_cmd(char *sh, command_t *cmd_node, size_t index, char *token)
 {
 	/* free(cmd_node->command[index]); */
